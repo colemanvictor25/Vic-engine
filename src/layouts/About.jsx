@@ -1,3 +1,4 @@
+import Model from "../Model/model_one";
 export default function About() {
     return (
       <>
@@ -75,6 +76,9 @@ export default function About() {
             </div>
           </div>
         </div>
+
+        <Model style={{ width: '100%', height: '100vh' }} />
+
       </>
     );
   }
