@@ -1,4 +1,5 @@
 import Model from "../Model/model_one";
+import Image  from "../assets/2.png";
 export default function About() {
     return (
       <>
@@ -7,7 +8,7 @@ export default function About() {
             <div className="mr-10">
               <img
                 className="rounded-lg min-w-[100px] w-full h-auto md:w-auto md:h-auto"
-                src="https://ucarecdn.com/833d0fe1-c3b5-4843-b62c-fed9467aceeb/imageOfMyself.jpeg"
+                src={Image}
                 alt="image of myself"
               />
             </div>

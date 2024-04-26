@@ -1,8 +1,8 @@
-import image from '../assets/2.png';
+import image from '../assets/laptop-with-joystick.jpg';
 
 export default function Cards() {
     return (
-        <div className="flex flex-col w-screen min-h-screen p-10 bg-[#181818] text-[#fff]">
+        <div className="flex flex-col w-screen min-h-screen p-10 bg-[#fff] text-[#000]">
             <h1 className="text-3xl">Product CategorSCy Page Title</h1>
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mt-6">
                 <span className="text-sm font-semibold">1-16 of 148 Products</span>

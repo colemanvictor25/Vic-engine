@@ -1,8 +1,11 @@
 import Cards from "../components/Cards";
 import Image from '../assets/2.png'
+import Video from '../assets/videos/0001-0205.mp4';
 export default function  Home(){
   return (
     <>
+   
+
     <section className="text-white body-font" style={{ backgroundImage: `url(${Image})`, backgroundSize: "cover", backgroundPosition: "center", backgroundAttachment: "fixed", backgroundColor:"gray", backgroundBlendMode: "multiply" }}>
   <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
@@ -20,6 +23,12 @@ export default function  Home(){
     </div>
   </div>
 </section>
+<center>
+<video autoPlay muted loop id="myVideo" style={{width: "50%", marginTop: "-50px",borderTopRightRadius: "10px"}}>
+      <source src={Video} type="video/mp4" />
+      Your browser does not support HTML5 video.
+      </video>
+</center>
 
     <Cards/>
 
