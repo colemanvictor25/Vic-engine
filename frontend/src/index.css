@@ -3,6 +3,51 @@
 @tailwind utilities;
 
 body{
-  background-color: #191919;
+  background-color: #202020;
+  height: 100vh;
   color: rgba(255, 255, 255, 0.733);
+}
+/* For WebKit Browsers (Chrome, Safari) */
+test{
+  color: rgba(0, 255, 0, 0.689);
+}
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Scrollbar Handle/Thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #404040; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background-color: #202020; /* Set the color of the scrollbar track */
+}
+
+footer{
+  bottom: 0px;
+  margin-bottom: -30px;
+}
+.video-container {
+  position: relative;
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  background-color:#18181832; /* Adjust the overlay color and opacity as needed */
+  overflow-y: auto; /* Enable vertical scrolling for content */
 }
